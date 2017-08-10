@@ -1,5 +1,11 @@
 {
+  "name": "generate-and-serve",
+  "description": "requires typescrypt or if on heroku use this buildpack => https://github.com/andresvia/heroku-buildpack-nodejs (UI: )",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "tsc index.ts && node index.js"
+  },
   "dependencies": {
-    "app": "file:./app"
+    "@types/node": "^8.0.20"
   }
 }
